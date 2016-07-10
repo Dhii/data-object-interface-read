@@ -10,11 +10,25 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
-    "require-dev": {},
+    "require": {
+        "dhii/stringable-interface": "dev-master"
+    },
+    "require-dev": {
+        "dhii/php-cs-fixer-config": "dev-master"
+    },
     "autoload": {
         "psr-4": {
-            "Dhii\\DataObject\\": "src/"
+            "Dhii\\Data\\": "src/"
         }
-    }
+    },
+    "repositories": [
+        {
+            "url": "https://github.com/Dhii/stringable-interface.git",
+            "type": "git"
+        },
+        {
+            "url": "https://github.com/Dhii/php-cs-fixer-config.git",
+            "type": "git"
+        }
+    ]
 }
